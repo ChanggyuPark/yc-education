@@ -8,7 +8,7 @@ function init(root){
 const hero=root.querySelector(".hero"),floating=root.querySelector(".floating-consult");
 if(hero&&floating){const updateFloating=()=>floating.classList.toggle("is-visible",hero.getBoundingClientRect().bottom<=0);
 updateFloating();
-if("IntersectionObserver" in window){floatObserver=new IntersectionObserver(updateFloating,{threshold:0,rootMargin:"0px 0px -99% 0px"});floatObserver.observe(hero);}
+if("IntersectionObserver" in window){floatObserver=new IntersectionObserver(([e])=>floating.classList.toggle("is-visible",!e.isIntersecting&&e.boundingClientRect.top<0));floatObserver.observe(hero);}
 else{floatScrollHandler=updateFloating;window.addEventListener("scroll",updateFloating,{passive:true});window.addEventListener("resize",updateFloating);}
 }
 const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
