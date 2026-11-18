@@ -50,3 +50,21 @@ html:has(#yc-education-app){scroll-padding-top:190px}
  #yc-education-app .hero-part:nth-child(2):after{display:none}
 }
 @media(prefers-reduced-motion:reduce){#yc-education-app .floating-consult{transition:none}}
+
+
+/* WorkForms integration: keep existing consultation section, replace only its form area */
+#yc-education-app .contact-proposal{margin-top:20px;display:flex}
+#yc-education-app .contact-proposal .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px}
+#yc-education-app .monday-form-card{min-width:0}
+#yc-education-app .monday-form-desktop{width:100%;min-width:0}
+#yc-education-app .monday-form-desktop iframe{display:block;width:100%;height:900px;border:0;background:#fff;box-shadow:none}
+#yc-education-app .monday-form-fallback{margin:10px 0 0;text-align:center;font-size:13px;line-height:1.5}
+#yc-education-app .monday-form-fallback a{color:var(--yc);text-decoration:underline;text-underline-offset:3px}
+#yc-education-app .monday-form-mobile{display:none}
+@media(max-width:620px){
+ #yc-education-app .monday-form-desktop{display:none}
+ #yc-education-app .monday-form-mobile{display:flex;flex-direction:column;gap:15px}
+ #yc-education-app .monday-form-mobile p{margin:0;color:var(--muted);font-size:14px}
+ #yc-education-app .monday-form-mobile .btn{width:100%;text-align:center;justify-content:center}
+ #yc-education-app .contact-proposal .btn{width:100%;justify-content:center}
+}
