@@ -72,3 +72,27 @@ html:has(#yc-education-app){scroll-padding-top:190px}
 /* Consultation PDF CTA: keep text readable on the dark gradient */
 #yc-education-app .contact-proposal .btn,#yc-education-app .contact-proposal .btn:visited{color:#fff!important;border-color:rgba(255,255,255,.75)}
 #yc-education-app .contact-proposal .btn:hover,#yc-education-app .contact-proposal .btn:focus-visible{color:#fff!important;background:rgba(255,255,255,.12);border-color:#fff}
+
+
+/* YC Education content and hierarchy refinements, 2026-11-18 */
+#yc-education-app .hero-footnote{align-items:center}
+#yc-education-app .hero-footnote svg{flex:0 0 16px;align-self:center;margin-top:0}
+#yc-education-app #audience .section-heading h2{font-weight:400}
+#yc-education-app #software .section-heading h2 strong{font-weight:850}
+#yc-education-app #software .section-heading h2 .sw-title-light{font-weight:400}
+#yc-education-app #equipment .section-heading{max-width:none;text-align:center;margin-inline:auto}
+#yc-education-app #equipment .section-heading h2{font-weight:400;white-space:nowrap}
+#yc-education-app #robotics .section-heading h2{font-weight:400}
+#yc-education-app #process .section-heading{max-width:none;text-align:center;margin-inline:auto}
+#yc-education-app #process .section-heading h2{font-weight:500;white-space:nowrap}
+@media(min-width:1001px){
+ #yc-education-app .journey-items{column-gap:48px}
+ #yc-education-app .journey-step:not(:last-child):after{content:'⟶';right:-24px;top:50%;font-size:29px;line-height:1;transform:translate(50%,-50%);display:block}
+}
+@media(max-width:1000px){
+ #yc-education-app #equipment .section-heading h2,
+ #yc-education-app #process .section-heading h2{white-space:normal}
+}
+@media(max-width:620px){
+ #yc-education-app .hero-copy br{display:block}
+}
