@@ -27,3 +27,7 @@
 
 #yc-education-app{display:block;isolation:isolate;position:relative;}
 #yc-education-app .hero-title-bold{font-weight:900}#yc-education-app .hero-title-light{font-weight:400}
+
+/* v6: ENCY Hyper logo stays horizontal, without inherited rotation */
+#yc-education-app #sw-encyhyper .software-brand img{width:190px;height:48px;object-fit:contain;object-position:left center;transform:none!important;rotate:0deg!important;}
+#yc-education-app .software-screenshot .screen-annotation:empty{display:none;}
