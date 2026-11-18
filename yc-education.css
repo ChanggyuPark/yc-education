@@ -68,3 +68,7 @@ html:has(#yc-education-app){scroll-padding-top:190px}
  #yc-education-app .monday-form-mobile .btn{width:100%;text-align:center;justify-content:center}
  #yc-education-app .contact-proposal .btn{width:100%;justify-content:center}
 }
+
+/* Consultation PDF CTA: keep text readable on the dark gradient */
+#yc-education-app .contact-proposal .btn,#yc-education-app .contact-proposal .btn:visited{color:#fff!important;border-color:rgba(255,255,255,.75)}
+#yc-education-app .contact-proposal .btn:hover,#yc-education-app .contact-proposal .btn:focus-visible{color:#fff!important;background:rgba(255,255,255,.12);border-color:#fff}
